@@ -1,0 +1,28 @@
+# Environment & Local Configuration
+.env
+config/database.local.php
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDE & Editor Configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Docker volumes & local data
+docker/data/
+db_data/
+
+# Composer dependencies (if used later)
+/vendor/
+composer.phar
+
+# Log files
+*.log

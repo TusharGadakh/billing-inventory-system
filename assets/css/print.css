@@ -1,0 +1,75 @@
+/**
+ * Print Stylesheet for Invoices
+ * Strips UI elements & provides clean A4 print layout
+ */
+
+@media print {
+    /* Hide non-printable elements */
+    .sidebar,
+    .topbar,
+    .main-footer,
+    .flash-alert,
+    .no-print,
+    .btn,
+    .page-actions,
+    .breadcrumbs {
+        display: none !important;
+    }
+
+    body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+    }
+
+    .app-container {
+        display: block !important;
+    }
+
+    .main-content {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #fff !important;
+    }
+
+    .content-wrapper {
+        padding: 0 !important;
+    }
+
+    .invoice-card {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .invoice-table {
+        border-collapse: collapse !important;
+        width: 100% !important;
+    }
+
+    .invoice-table th,
+    .invoice-table td {
+        border: 1px solid #d1d5db !important;
+        padding: 8px 12px !important;
+        color: #000 !important;
+    }
+
+    .invoice-table th {
+        background-color: #f3f4f6 !important;
+        font-weight: 700 !important;
+    }
+
+    .invoice-header,
+    .invoice-footer {
+        page-break-inside: avoid;
+    }
+
+    @page {
+        size: A4 portrait;
+        margin: 1.5cm;
+    }
+}
